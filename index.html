@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Rock Paper Scissors</h1>
+            <p class="subtitle">
+                Can you beat the computer? Let's find out!
+            </p>
+        </header>
+        <div class="score-board">
+            <div class="score-card">
+                <span>You 👩</span>
+                <h2 id="userScore">0</h2>
+            </div>
+            <div class="score-divider">VS</div>
+            <div class="score-card">
+                <span>Computer 🤖</span>
+                <h2 id="computerScore">0</h2>
+            </div>
+        </div>
+        <div class="game-section">
+            <h2>Make Your Move!</h2>
+            <p>Choose one of the three options below.</p>
+            <div class="choices">
+                <button class="choice-btn" data-choice="rock">
+                    <span>✊</span>
+                    <small>Rock</small>
+                </button>
+                <button class="choice-btn" data-choice="paper">
+                    <span>✋</span>
+                    <small>Paper</small>
+                </button>
+                <button class="choice-btn" data-choice="scissors">
+                    <span>✌️</span>
+                    <small>Scissors</small>
+                </button>
+            </div>
+        </div>
+        <div class="result-box">
+            <h3 id="resultText">Ready to Play? 🎮</h3>
+            <p id="resultMessage">
+                Your move will appear here.
+            </p>
+            <div class="moves">
+                <div>
+                    <span>You chose</span>
+                    <strong id="userChoice">-</strong>
+                </div>
+                <div>
+                    <span>Computer chose</span>
+                    <strong id="computerChoice">-</strong>
+                </div>
+            </div>
+        </div>
+        <button id="resetBtn" class="reset-btn">
+            Reset Score ↻
+        </button>
+        <footer>
+            Made with 💗 and JavaScript
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
